@@ -1,5 +1,5 @@
 # MediaRPC
-Discord RPC for some online video/audio sites
+Discord RPC for some online video/audio sites, BETA (doesn't work properly yet!)
 
 ## Supported Sites
 * [niconico](https://nicovideo.jp)
