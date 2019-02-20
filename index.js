@@ -10,7 +10,7 @@ const setStatus = (title, uploader, service, timestamp) => {
   return {
     pid: process.pid,
     activity: {
-      details: title, //wessel's basement
+      details: title, 
       state: uploader,
       timestamps: {
         start: timestamp
