@@ -1,12 +1,16 @@
 # MediaRPC
 Discord RPC for some online video/audio sites
 
-## Requirements
+## Supported Sites
+* [niconico](https://nicovideo.jp)
+* [BBC iPlayer](https://www.bbc.co.uk/iplayer)
+
+## Installation 
+### Requirements
 * Tampermonkey (or similar extension)
 * Node.js (and PM2 installed globally)
 * Discord Desktop
 
-## Installation 
 ### Node Process
 1. ``git clone https://github.com/ohlookitsderpy/MediaRPC`` (or just click **Clone or download** -> **Download ZIP**)
 2. ``cd MediaRPC``
