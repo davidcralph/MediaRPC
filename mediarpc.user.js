@@ -31,18 +31,19 @@
     if (service === 'niconico') url = `&title=${document.getElementsByClassName("VideoTitle")[0].innerHTML}&uploader=${document.getElementsByClassName("VideoOwnerInfo-pageLink")[0].innerHTML}`;
     if (service === 'bbciplayer') url = `&title=${document.getElementsByClassName("typo--bold play-cta__text__title")[0].innerHTML}&uploader=${document.getElementsByClassName("play-cta__text__subtitle")[0].innerHTML}`;
 
-
     window.onbeforeunload = function () {
         client.get(`http://127.0.0.1:8080/setRPC?service=${service}&disable=true`, (res) => {
             console.log('request sent');
         });
     };
 
-    window.addEventListener('hashchange', function() {
+    var pushState = history.pushState;
+    history.pushState = function () {
+        pushState.apply(history, arguments);
         client.get(`http://127.0.0.1:8080/setRPC?service=${service}&disable=true`, (res) => {
             console.log('request sent');
         });
-    });
+    };
 
     client.get(`http://127.0.0.1:8080/setRPC?service=${service}${url}`, (res) => {
         console.log('request sent');
