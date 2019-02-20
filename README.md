@@ -2,7 +2,7 @@
 Discord RPC for some online video/audio sites
 
 ## Supported Sites
-* [niconico](https://nicovideo.jp)
+* [niconico](https://www.nicovideo.jp)
 * [BBC iPlayer](https://www.bbc.co.uk/iplayer)
 
 ## Installation 
