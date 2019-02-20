@@ -3,5 +3,16 @@ Discord RPC for some online video/audio sites
 
 ## Requirements
 * Tampermonkey (or similar extension)
-* Node.js
+* Node.js (and PM2 installed globally)
 * Discord Desktop
+
+## Installation 
+### Node Process
+1. ``git clone https://github.com/ohlookitsderpy/MediaRPC`` (or just click **Clone or download** -> **Download ZIP**)
+2. ``cd MediaRPC``
+3. ``yarn install`` or ``npm install``
+4. ``pm2 start index.js --name MediaRPC``
+
+### Userscript
+1. Go to https://github.com/ohlookitsderpy/MediaRPC/raw/master/mediarpc.user.js
+2. Click **install**
