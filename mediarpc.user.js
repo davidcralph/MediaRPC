@@ -13,16 +13,18 @@
 
 (function () {
     'use strict';
+    // START https://stackoverflow.com/a/22076667 (slightly modified)
     var HttpClient = function () {
         this.get = (aUrl, aCallback) => {
             var anHttpRequest = new XMLHttpRequest();
             anHttpRequest.onreadystatechange = () => {
-                if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200) aCallback(anHttpRequest.responseText)
+                if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200) aCallback(anHttpRequest.responseText);
             }
             anHttpRequest.open('GET', aUrl, true);
             anHttpRequest.send(null);
         }
     }
+    // END https://stackoverflow.com/a/22076667 (slightly modified)
 
     var client = new HttpClient();
     var service;
@@ -40,7 +42,8 @@
             console.log('request sent');
         });
     };
-
+    
+    // START https://stackoverflow.com/a/41825103
     var pushState = history.pushState;
     history.pushState = function () {
         pushState.apply(history, arguments);
@@ -48,6 +51,7 @@
             console.log('request sent');
         });
     };
+    // END https://stackoverflow.com/a/41825103
 
     client.get(`http://127.0.0.1:8080/setRPC?service=${service}${url}`, (res) => {
         console.log('request sent');
