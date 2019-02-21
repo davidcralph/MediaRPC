@@ -1,7 +1,7 @@
 ---
 name: New Site
 about: Suggest a site to be added to MediaRPC
-title: "[SITE]"
+title: ''
 labels: enhancement
 assignees: ''
 
