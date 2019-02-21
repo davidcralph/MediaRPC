@@ -13,5 +13,8 @@ e.g https://youtube.com
 **Site URL**
 e.g https://youtube.com/watch
 
+**Site Icon**
+512x512 minimum, 1024x1024 preferred 
+
 **Additional Information**
 Very cool website
