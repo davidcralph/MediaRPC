@@ -5,6 +5,7 @@ Discord RPC for some online video/audio sites
 * [niconico](https://www.nicovideo.jp)
 * [BBC iPlayer](https://www.bbc.co.uk/iplayer)
 * [Newgrounds](https://www.newgrounds.com)
+* [AnimeLab](https://www.animelab.com)
 
 Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/MediaRPC/issues/new?assignees=&labels=enhancement&template=new-site.md&title=)!
 
@@ -29,3 +30,6 @@ Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/Media
 1. Visit ``chrome://extensions`` in Chrome
 2. Click **Load unpacked** (Make sure **Developer Mode** is on)
 3. Go to the directory containing MediaRPC/extension and click **ok**
+
+## Screenshot
+<img src='assets/screenshot.jpg'>

@@ -4,7 +4,8 @@ const DiscordRPC = require('discord-urpc');
 const supportedApps = {
   niconico: '547484924312158210',
   bbciplayer: '547850771765526548',
-  newgrounds: '548199872914784256'
+  newgrounds: '548199872914784256',
+  animelab: '548219838804393995'
 };
 
 const setStatus = (title, uploader, service, timestamp) => {

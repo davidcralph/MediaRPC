@@ -7,7 +7,8 @@
             "https://www.nicovideo.jp/watch/*",
             "https://www.bbc.co.uk/iplayer/episode/*",
             "https://www.newgrounds.com/audio/listen/*",
-            "https://www.newgrounds.com/portal/view/*"
+            "https://www.newgrounds.com/portal/view/*",
+            "https://www.animelab.com/player/*"
         ],
         "js": ["index.js"]
     }]
