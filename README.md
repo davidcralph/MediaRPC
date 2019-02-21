@@ -6,7 +6,7 @@ Discord RPC for some online video/audio sites
 * [BBC iPlayer](https://www.bbc.co.uk/iplayer)
 * [Newgrounds](https://www.newgrounds.com)
 
-Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/MediaRPC/issues/new)!
+Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/MediaRPC/issues/new?assignees=&labels=enhancement&template=new-site.md&title=)!
 
 ## Installation 
 ### Requirements
