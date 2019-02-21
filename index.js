@@ -3,14 +3,15 @@ const DiscordRPC = require('discord-urpc');
 
 const supportedApps = {
   niconico: '547484924312158210',
-  bbciplayer: '547850771765526548'
+  bbciplayer: '547850771765526548',
+  newgrounds: '548199872914784256'
 };
 
 const setStatus = (title, uploader, service, timestamp) => {
   return {
     pid: process.pid,
     activity: {
-      details: title, 
+      details: title,
       state: uploader,
       timestamps: {
         start: timestamp
