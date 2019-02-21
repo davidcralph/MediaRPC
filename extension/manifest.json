@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "MediaRPC",
+    "version": "0.1",
+    "content_scripts": [{
+        "matches": [
+            "https://www.nicovideo.jp/watch/*",
+            "https://www.bbc.co.uk/iplayer/episode/*",
+            "https://www.newgrounds.com/audio/listen/*",
+            "https://www.newgrounds.com/portal/view/*"
+        ],
+        "js": ["index.js"]
+    }]
+}

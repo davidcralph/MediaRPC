@@ -42,7 +42,7 @@
             console.log('request sent');
         });
     };
-    
+
     // START https://stackoverflow.com/a/41825103
     var pushState = history.pushState;
     history.pushState = function () {

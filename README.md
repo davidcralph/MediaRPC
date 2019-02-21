@@ -10,7 +10,8 @@ Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/Media
 
 ## Installation 
 ### Requirements
-* Tampermonkey (or similar extension)
+* Tampermonkey (or similar extension) (OPTIONAL)
+* Chrome (OPTIONAL, USED INSTEAD OF TAMPERMONKEY)
 * Node.js (and PM2 installed globally)
 * Discord Desktop
 
@@ -23,3 +24,8 @@ Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/Media
 ### Userscript
 1. Go to https://github.com/ohlookitsderpy/MediaRPC/raw/master/mediarpc.user.js
 2. Click **install**
+
+### Extension
+1. Visit ``chrome://extensions`` in Chrome
+2. Click **Load unpacked** (Make sure **Developer Mode** is on)
+3. Go to the directory containing MediaRPC/extension and click **ok**
