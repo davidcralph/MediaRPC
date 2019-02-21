@@ -6,6 +6,8 @@
 // @author       ohlookitsderpy
 // @match        https://www.nicovideo.jp/watch/*
 // @match        https://www.bbc.co.uk/iplayer/episode/*
+// @match        https://www.newgrounds.com/audio/listen/*
+// @match        https://www.newgrounds.com/portal/view/*
 // @grant        none
 // ==/UserScript==
 
@@ -27,9 +29,11 @@
     var url;
     if (window.location.href.includes('nicovideo')) service = 'niconico';
     if (window.location.href.includes('bbc')) service = 'bbciplayer';
+    if (window.location.href.includes('newgrounds')) service = 'newgrounds';
 
     if (service === 'niconico') url = `&title=${document.getElementsByClassName("VideoTitle")[0].innerHTML}&uploader=${document.getElementsByClassName("VideoOwnerInfo-pageLink")[0].innerHTML}`;
     if (service === 'bbciplayer') url = `&title=${document.getElementsByClassName("typo--bold play-cta__text__title")[0].innerHTML}&uploader=${document.getElementsByClassName("play-cta__text__subtitle")[0].innerHTML}`;
+    if (service === 'newgrounds') url = `&title=${document.getElementsByClassName("pod-head")[0].querySelectorAll('h2')[0].textContent}&uploader=${document.getElementsByClassName("item-details")[0].querySelectorAll('a')[0].textContent}`
 
     window.onbeforeunload = function () {
         client.get(`http://127.0.0.1:8080/setRPC?service=${service}&disable=true`, (res) => {
