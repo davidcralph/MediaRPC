@@ -4,6 +4,7 @@ Discord RPC for some online video/audio sites
 ## Supported Sites
 * [niconico](https://www.nicovideo.jp)
 * [BBC iPlayer](https://www.bbc.co.uk/iplayer)
+* [Newgrounds](https://www.newgrounds.com)
 
 Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/MediaRPC/issues/new)!
 
