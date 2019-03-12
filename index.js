@@ -32,9 +32,7 @@ app.get('/setRPC', (req, res) => {
     const timestamp = new Date().getTime();
     const uRPC = new DiscordRPC({ clientID: supportedApps[req.query.service], debug: false });
     if (req.query.disable) return uRPC.close();
-    uRPC.on('ready', () => {
-        uRPC.send('SET_ACTIVITY', setStatus(req.query.title, req.query.uploader, req.query.service, timestamp));
-     });
+    uRPC.on('ready', uRPC.send('SET_ACTIVITY', setStatus(req.query.title, req.query.uploader, req.query.service, timestamp)));
   } catch (ex) {
     if (ex instanceof TypeError) throw ex;
     else return console.log('FriendlyError' + ex);
