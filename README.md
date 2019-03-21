@@ -10,7 +10,7 @@ Discord RPC for some online video/audio sites
 * [Newgrounds](https://www.newgrounds.com)
 * [AnimeLab](https://www.animelab.com)
 
-Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/MediaRPC/issues/new?assignees=&labels=enhancement&template=new-site.md&title=)!
+Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/MediaRPC/issues/new?assignees=&labels=enhancement&template=new-site.md)!
 
 ## Installation 
 ### Requirements
@@ -27,7 +27,7 @@ Want a site adding? Open an issue [here](https://github.com/ohlookitsderpy/Media
 
 ### Userscript
 1. Go to https://github.com/ohlookitsderpy/MediaRPC/raw/master/mediarpc.user.js
-2. Click **install**
+2. Click **Install**
 
 ### Extension
 1. Visit ``chrome://extensions`` in Chrome
