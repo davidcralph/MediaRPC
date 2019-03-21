@@ -1,4 +1,7 @@
 # MediaRPC
+<a href='https://ko-fi.com/ohlookitsderpy' target='_blank'><img height='36' style='border:0px;height:36px;' src='assets/kofi.png' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href='https://patreon.com/ohlookitsderpy' target='_blank'><img height='36' style='border:0px;height:36px;' src='assets/patreon.png' border='0' alt='Become a patron on patreon.com' /></a>
+
 Discord RPC for some online video/audio sites
 
 ## Supported Sites
